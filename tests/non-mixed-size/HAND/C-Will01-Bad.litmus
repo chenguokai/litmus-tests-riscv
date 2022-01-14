@@ -8,7 +8,7 @@ RISCV C-Will01-Bad
  ori x5,x0,1              | lw x5,0(x6) ;
  sw x5,0(x6)              | fence r,r   ;
  ori x8,x0,1              | lw x7,0(x8) ;
- amoadd.w.aq.rl x9,x5,(x7)|             ;
+ amoadd.w.aqrl x9,x5,(x7)|             ;
  ori x11,x0,1             |             ;
  sw x11,0(x12)            |             ;
 exists

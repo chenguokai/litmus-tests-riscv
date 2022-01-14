@@ -10,7 +10,7 @@ Orig=PodWWARP WsePAR PodWWARP WsePAR
 }
  P0                         | P1                         ;
  ori x5,x0,2                | ori x5,x0,2                ;
- amoswap.w.aq.rl x0,x5,(x6) | amoswap.w.aq.rl x0,x5,(x6) ;
+ amoswap.w.aqrl x0,x5,(x6) | amoswap.w.aqrl x0,x5,(x6) ;
  ori x7,x0,1                | ori x7,x0,1                ;
  sw x7,0(x8)                | sw x7,0(x8)                ;
 exists

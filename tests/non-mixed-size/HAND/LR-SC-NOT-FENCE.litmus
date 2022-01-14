@@ -14,8 +14,8 @@ RISCV LR-SC-NOT-FENCE
  P0                       | P1                       ;
  ori x5,x0,1              | ori x5,x0,1              ;
  sw x5,0(x6)              | sw x5,0(x6)              ;
- lr.w.aq.rl x12,0(x10)    | lr.w.aq.rl x12,0(x10)    ;
- sc.w.aq.rl x11,x5,0(x10) | sc.w.aq.rl x11,x5,0(x10) ;
+ lr.w.aqrl x12,0(x10)    | lr.w.aqrl x12,0(x10)    ;
+ sc.w.aqrl x11,x5,0(x10) | sc.w.aqrl x11,x5,0(x10) ;
  lw x7,0(x8)              | lw x7,0(x8)              ;
 
 exists (c=1 /\ d=1 /\ 0:x7=0 /\ 1:x7=0)
